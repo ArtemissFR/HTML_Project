@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu des Pages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+        .container::before,
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background-color: #007bff;
+            border-radius: 20px 0 0 20px;
+        }
+        .container::before {
+            left: -20px;
+        }
+        .container::after {
+            right: -20px;
+            border-radius: 0 20px 20px 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:last-child {
+            margin-bottom: 0;
+        }
+        .button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .orange-buttons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .orange-button {
+            display: block;
+            width: 120px;
+            padding: 15px 20px;
+            background-color: orange;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .orange-button:last-child {
+            margin-bottom: 0;
+        }
+        .orange-button:hover {
+            background-color: #e68a00;
+        }
+        .orange-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="container">
+            <h1>Menu des Pages</h1>
+            <div class="button-container">
+                <div class="button">
+                    <a href="https://192.168.1.97/" target="_blank">PfSense Firewall 1</a>
+                </div>
+                <div class="button">
+                    <a href="https://192.168.1.98/" target="_blank">PfSense Firewall 2</a>
+                </div>
+                <div class="button">
+                    <a href="https://192.168.1.98:9090/" target="_blank">DynFi Manager</a>
+                </div>
+                <div class="button">
+                    <a href="http://192.168.1.103/" target="_blank">GNS3</a>
+                </div>
+            </div>
+        </div>
+        <div class="orange-buttons">
+            <div class="orange-button">
+                <a href="https://192.168.1.50:8006/">PROXMOX 1</a>
+            </div>
+            <div class="orange-button">
+                <a href="https://192.168.1.150:8006/">PROXMOX 2</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
