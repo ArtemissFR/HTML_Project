@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPulse - Jeu Vidéo Cyberpunk</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Rowdies', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Fond légèrement plus sombre */
+            color: #ddd; /* Texte plus clair */
+            text-align: center;
+            overflow-x: hidden; /* Pour empêcher les barres de défilement horizontales */
+        }
+
+        .navbar {
+            background-color: #222; /* Fond de la barre de navigation plus foncé */
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            width: 100%;
+            padding-top: 60px; /* Assure que le contenu n'est pas caché sous la barre de navigation */
+            padding-bottom: 120px; /* Espace pour les icônes de réseaux sociaux en bas */
+        }
+
+        .sidebar-left,
+        .sidebar-right {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            background-color: #222; /* Couleur des bandes légèrement plus foncée */
+            z-index: -1; /* Placez-le derrière le contenu principal */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centrer les éléments verticalement */
+            flex-direction: column; /* Afficher les images en colonne */
+        }
+
+        .sidebar-left img,
+        .sidebar-right img {
+            max-height: 100px; /* Taille maximale des images */
+            margin: 10px; /* Espacement entre les images */
+        }
+
+        .sidebar-left {
+            left: 0;
+        }
+
+        .sidebar-right {
+            right: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff007f; /* Couleur du titre rose pétant */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #ccc; /* Couleur du texte plus claire */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff007f; /* Bouton avec une touche de rose pétant */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff6ab8; /* Changement de couleur au survol */
+        }
+
+        .game-screenshot {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Ombre plus légère */
+            margin-bottom: 20px;
+        }
+
+        .neon-text {
+            color: #ff007f; /* Couleur du texte neon */
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f, 0 0 40px #ff007f;
+        }
+
+        .social-icons {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222; /* Couleur du fond légèrement plus foncée */
+            padding: 10px 0;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #ff007f; /* Couleur des icônes avec une touche de rose pétant */
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #ff6ab8; /* Changement de couleur au survol */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#">A propos</a>
+        <a href="#">Acheter</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="sidebar-left">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+    <div class="sidebar-right">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
+    </div>
+    <div class="container">
+        <h1 class="neon-text">CyberPulse</h1>
+        <img src="screenshot.jpg" alt="CyberPulse Screenshot" class="game-screenshot">
+        <p>
+            Plongez dans un monde futuriste où la technologie règne en maître et où les corporations contrôlent tout.
+            Explorez des rues sombres et animées, hackez des systèmes de sécurité, et engagez-vous dans des combats
+            épiques dans ce jeu cyberpunk captivant.
+        </p>
+        <a href="#" class="button">Acheter Maintenant</a>
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+</body>
+</html>
