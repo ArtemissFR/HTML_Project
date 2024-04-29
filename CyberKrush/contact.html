@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CyberPulse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Rowdies', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Fond légèrement plus sombre */
+            color: #ddd; /* Texte plus clair */
+            text-align: center;
+            overflow-x: hidden; /* Pour empêcher les barres de défilement horizontales */
+        }
+
+        .navbar {
+            background-color: #222; /* Fond de la barre de navigation plus foncé */
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            width: 100%;
+            padding-top: 60px; /* Assure que le contenu n'est pas caché sous la barre de navigation */
+            padding-bottom: 120px; /* Espace pour les icônes de réseaux sociaux en bas */
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #ff007f; /* Couleur des titres */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #ccc; /* Couleur du texte plus claire */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #888;
+            background-color: #333; /* Fond des champs de formulaire */
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff007f; /* Bouton avec une touche de rose pétant */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff6ab8; /* Changement de couleur au survol */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">A propos</a>
+        <a href="buy.html">Acheter</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Contactez-nous</h2>
+        <p>
+            Vous pouvez nous contacter via le formulaire ci-dessous ou par e-mail à l'adresse contact@cyberpulse.com.
+        </p>
+        <form action="#" method="post">
+            <label for="name">Nom:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
