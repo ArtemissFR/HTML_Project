@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évolution - CyberPulse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Rowdies', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Fond légèrement plus sombre */
+            color: #ddd; /* Texte plus clair */
+            text-align: center;
+            overflow-x: hidden; /* Pour empêcher les barres de défilement horizontales */
+        }
+
+        .navbar {
+            background-color: #222; /* Fond de la barre de navigation plus foncé */
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            width: 100%;
+            padding-top: 60px; /* Assure que le contenu n'est pas caché sous la barre de navigation */
+            padding-bottom: 120px; /* Espace pour les icônes de réseaux sociaux en bas */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff007f; /* Couleur du titre rose pétant */
+        }
+
+        .screenshot {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Ombre plus légère */
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .timeline-item {
+            width: 300px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .timeline-item h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">A propos</a>
+        <a href="buy.html">Acheter</a>
+        <a href="evolution.html">Evolution</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h1>Évolution</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h2>Conception de l'idée</h2>
+                <img src="screenshot1.png" alt="Screenshot 1" class="screenshot">
+            </div>
+            <div class="timeline-item">
+                <h2>Développement du concept</h2>
+                <img src="screenshot2.png" alt="Screenshot 2" class="screenshot">
+            </div>
+            <div class="timeline-item">
+                <h2>Création des graphismes</h2>
+                <img src="screenshot3.png" alt="Screenshot 3" class="screenshot">
+            </div>
+            <div class="timeline-item">
+                <h2>Développement de la jouabilité</h2>
+                <img src="screenshot4.png" alt="Screenshot 4" class="screenshot">
+            </div>
+            <div class="timeline-item">
+                <h2>Bêta-test</h2>
+                <img src="screenshot5.png" alt="Screenshot 5" class="screenshot">
+            </div>
+            <div class="timeline-item">
+                <h2>Finalisation et sortie</h2>
+                <img src="screenshot6.png" alt="Screenshot 6" class="screenshot">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
